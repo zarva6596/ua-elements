@@ -1,5 +1,6 @@
 import type { App } from 'vue';
-import { UaForm, UaFormItem, UaFormInput } from "@/components/form";
+import { UaForm, UaFormItem, UaFormInput } from "@/components";
+import type { FormSchemaItem } from '@/components/form/types';
 
 export default {
     install: (app: App) => {
@@ -9,4 +10,4 @@ export default {
     }
 };
 
-export { UaForm, UaFormItem, UaFormInput };
+export { UaForm, UaFormItem, UaFormInput, FormSchemaItem };
