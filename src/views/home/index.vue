@@ -1,8 +1,21 @@
 <template>
   <div>
-    <el-drawer model-value="true" />
+    <ua-form :schema="schema" />
   </div>
 </template>
+
 <script setup lang="ts">
-import ElDrawer from '@/components/drawer/ElDrawer.vue';
+import UaForm from '@/components/form/UaForm.vue';
+import type { FormSchemaItem } from '@/components/form/types';
+
+const schema: FormSchemaItem[] = [
+  {
+    name: 'first-name',
+    element: 'input'
+  },
+  {
+    name: 'last-name',
+    element: 'input'
+  }
+]
 </script>
